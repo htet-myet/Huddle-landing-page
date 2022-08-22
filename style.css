@@ -1,0 +1,453 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-image: url(./images/bg-hero-desktop.svg);
+  padding: 40px 60px;
+  background-color: hsl(193, 100%, 96%);
+  margin-bottom: 8em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.h-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.huddle{
+  width: 180px;
+}
+
+.huddle-logo {
+  width: 150px;
+  filter: brightness(0) invert(1);
+}
+
+.try {
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.h-body {
+  padding-top: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h-body-headline {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.h-content {
+  padding: 1.5em 3em 2em 0;
+  font-size: 17px;
+  font-weight: 400 ;
+  color: hsl(208, 11%, 55%);
+}
+
+.mockups {
+  width: 610px;
+}
+
+.free {
+  padding: 17px 60px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: hsl(322, 100%, 66%);
+  border: 1px solid;
+  color: #fff;
+  transition: all 500ms;
+}
+
+.free:hover {
+  opacity: 60%;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.b-body {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.b-body-headline {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.content {
+  padding: 1em 10em 2em 0;
+  font-size: 16px;
+  font-weight: 400;
+  color: hsl(208, 11%, 55%);
+}
+
+.card {
+  width: 330px;
+}
+
+.flow-body {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 10px;
+  padding: 40px;
+  margin-bottom: 40px;
+  flex-direction: row-reverse;
+}
+
+.flow-body-msg {
+  margin-left: 6em;
+}
+
+.flow-content {
+  padding: 1em 2.5em 0 0;
+  color: hsl(208, 11%, 55%);
+}
+
+.footer {
+  background-color: hsl(192, 100%, 9%);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 300px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 13em;
+}
+
+.a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  padding-top: 18px;
+  opacity: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.a::after {
+  content: "";
+  display: block;
+  width: 50%;
+  opacity: 0;
+  background-color: #fff;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.a:hover::after {
+  opacity: 1;
+  width: 100%;
+  height: 1px;
+  color: #fff;
+}
+
+.logo-content {
+  gap: 20px;
+  padding-top: 20px;
+  display: flex;
+}
+
+.logo-email {
+  width: 18px;
+  height: 18px;
+  padding-top: 5px;
+}
+
+.lorem{
+  width: 295px;
+  font-size: 13px;
+  opacity: 80%;
+}
+
+.represent {
+  font-size: 13px;
+  opacity: 80%;
+}
+
+.logo {
+  width: 15px;
+  height: 18px;
+}
+
+.f-icons {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  height: 100px;
+}
+
+.f-icons-icon {
+  display: flex;
+  gap: 1em;
+}
+
+.icon {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  padding: 13px;
+  width: 10px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6em;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+.icon:hover {
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+}
+
+.f-msg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 100px 100px;
+  translate: 65%;
+  margin-top: 3em;
+  gap: 20px;
+}
+
+.f-head{
+  font-size: 25px;
+  font-weight: 700;
+  font-family: "Open Sans", sans-serif;
+
+}
+
+
+@media screen and (max-width: 900px) {
+  .header{
+    background-image: url(./images/bg-hero-desktop.svg);
+  }
+  
+  .mockups{
+    width: 500px;
+  }
+
+  .h-body-headline{
+    font-size: 30px;
+  }
+
+  .h-content{
+    font-size: 15px;
+  }
+
+  .b-body{
+    width: 880px;
+  }
+
+  .flow-body{
+    width: 880px;
+  }
+
+  .f-msg{
+    translate: 35%;
+  }
+}
+
+
+@media screen and (max-width : 400px) {
+
+  .container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+  .header {
+    background-image: url(./images/bg-hero-desktop.svg);
+    padding:25px 25px;
+    background-color: hsl(193, 100%, 96%);
+    margin-bottom: 5em;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+
+  .body{
+    text-align: center;
+  }
+
+  .h-body{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .h-body-msg{
+    padding-top: 35px;
+  }
+
+  .h-body-headline{
+    font-size: 27px;
+  }
+
+  .h-content{
+    padding: 20px 31px 30px 31px;
+    font-size: 15px;
+    color: #000;
+  }
+
+  .huddle{
+    width: 100px;
+  }
+
+  .try{
+    font-size: 10px;
+    padding: 5px 23px;
+    font-weight: 700;
+  }
+
+  .free{
+    padding: 10px 55px;
+    height: 40px;
+  }
+
+  .mockups{
+    width: 320px;
+    padding-top: 4em;
+  }
+
+  .b-body{
+    width: 360px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .card{
+    width: 270px;
+  }
+
+  .b-body-msg{
+    padding-top: 3em;
+  }
+
+  .b-body-headline{
+    font-size: 25px;
+  }
+
+  .content{
+    padding: 1em;
+    font-size: 13px;
+    line-height: 20px;
+
+  }
+
+  .flow-body{
+    width: 360px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .flow-body-msg{
+    padding-top: 3em;
+    margin: 0;
+  }
+
+  .b-flow-headline{
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .flow-content{
+    padding: 1em;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .f-msg{
+      translate: 0% 435%;
+      padding: 20px;
+      gap: 25px;
+  }
+
+  .f-head{
+    font-size: 20px;
+  }
+
+  .footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    margin-top: 16em;
+    padding: 50px 10px;
+    overflow: hidden;
+  }
+
+  .huddle-logo{
+    display: flex;
+  }
+
+  .logo-content{
+    display: flex;
+  }
+
+  .represent{
+    font-size: 1.15em;
+  }
+
+  .lorem{
+    width: 100%;
+    font-size: 1.15em;
+  }
+
+  .a{
+    font-size: 1.15em;
+    display: flex;
+    padding-right: 14em;
+    
+  }
+
+  .f-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .copy{
+    font-size: 14px;
+  }
+
+  .icon{
+    margin: 2em 0 1em 0;
+    padding: 15px;
+  
+  }
+}
